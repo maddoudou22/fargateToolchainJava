@@ -11,7 +11,7 @@ Parameters:
   ECRRepositoryName:
     Description: Nom du repository cree dans ECR hebergeant les images Docker a deployer
     Type: String
-    Default: "javafargatetoolchain"
+    Default: "fargatetoolchainjava"
     AllowedPattern: '[a-z]+'
 
   FargateCluster:
