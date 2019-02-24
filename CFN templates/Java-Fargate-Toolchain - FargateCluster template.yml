@@ -34,13 +34,6 @@ Parameters:
     Description: Subnet dans lequel le Service execute les conteneurs (doit etre dans le VPC specife ci-dessous)
     Type: AWS::EC2::Subnet::Id
 
-  # Il est imperatif de specifier une image Docker lors de la creation de la Task Definition. Cependant l'image
-  #  souhaitee n'aura pas encore ete buildee par CodePipeline. En attendant on specifie une image bidon.
-#  ContainerImage:
-#    Description: Image utilisee uniquement pour la creation de la TaskDefinition. Sera ecrasee au premier build de l'application par CodeBuild.
-#    Type: String
-#    Default: nginx
-
   ContainerPort:
     Description: port appele par les clients pour acceder au service 
     Type: Number
